@@ -1,0 +1,1153 @@
+@media (min-width: 1501px){
+    #Voltar{
+        height: 10px;
+    }
+    /* PARTE INICIAL */
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-attachment: fixed;
+        background-color: #212121;
+        background-image: linear-gradient(160deg, #110F20 20%, #322E7E);
+        font-family: 'DM Mono', monospace;
+        color: white;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #110F20;
+        top: 0;
+        padding: 0 2%;
+    }
+    .section a{
+        text-decoration: none;
+        color: white;
+    }
+    .section a:hover{
+        color: #8479ff;;
+    }
+    nav li{
+        display: inline-block;
+        position: relative;
+    }
+    nav li a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .tituloSite{
+        font-size: 22px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        box-shadow: 0 0 2px black;
+        display: none;
+    }
+    .dropdown-menu a{
+        display: block;
+        color: black;
+        color: white;
+    }
+    .dropdown:hover .dropdown-menu{
+        z-index: 99;
+        background-color: transparent;
+        border: transparent;
+        display: block;
+        background-color: #212121;
+       
+    }
+    body.dark {
+        background: white;
+        color: black;
+    }
+    
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+      
+    .label {
+        background-color: #322E7E;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 50px;
+    }
+    .label .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+      
+    .checkbox:checked + .label .ball {
+        transform: translateX(24px);
+    }
+    hr{
+        position: fixed;
+        width: 100%;
+        border-color: #3c2e93;
+    }
+    /* FIM PARTE INICIAL */
+    
+    /* INICIO   /SOBREM MIM*/
+    
+    .Apresentacao{
+        top: 0;
+        display: flex;
+        height: 50vh;
+        padding: 0 10%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .Apresentacao img{
+        margin-top: 10%;
+    }
+    .Apresentacao div{
+        font-size: 30px;
+        padding-top: 10%;
+    }
+    .Apresentacao div span{
+        color: #8479ff;
+    }
+    .Apresentacao div p{
+        color: #8a8a8f;
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    .Apresentacao button{
+        background-color: #3c2e93;
+        color: white;
+        border-radius: 18px;
+        height: 40px;
+        width: 30%;
+        border: 0;
+    }
+    .Apresentacao button:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    .SobreMim{
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    .SobreMim h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .SobreMim p{
+        padding-top: 5%;
+        text-align: center;
+    }
+    .QuadInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-top: 10%;
+    }
+    .QuadCinzaInfo:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    .QuadCinzaInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #333333;
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+    }
+    .QuadCinzaInfo h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    /* INICIO / SOBRE MIM FIM */
+    
+    /* INICIO PROJETOS */
+    .Projetos{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Projetos h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .QuadProjeto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinza{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+    }
+    .QuadCinza h1{
+        padding: 0 10%;
+        text-align: left;
+        font-size: 18px;
+    }
+    .QuadCinza p{
+        padding: 0 10%;
+        font-size: 14px;
+        color: #828282;
+    }
+    .QuadCinza img{
+        padding: 5% 7%;
+    }
+    .QuadCinza img:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    /* FIM PROJETOS */
+    
+    /* INICIO SERVICOS */
+    .Servicos{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Servicos h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .QuadServico{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinzaServico{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+    }
+    .QuadCinzaServico img{
+        padding: 2% 2%;
+    }
+    .QuadCinzaServico h1{
+        padding: 25% 2%;
+        text-align: left;
+        font-size: 18px;
+        color: #828282;
+    }
+    /* FIM SERVICOS */
+    
+    /* INICIO HABILIDADES */
+    .Habilidades{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Habilidades h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .QuadHabilidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinzaHabilidades{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* FIM HABILIDADES */
+    
+    /* INICIO CONTATO */
+    .Contato{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Contato h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .Contato .NomeESobre input{
+        margin-top: 30%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 222px;
+        border-radius: 18px;
+    }
+    .Contato .Telefone input{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 460px;
+        border-radius: 18px;
+    }
+    .Contato .Assunto input{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 460px;
+        border-radius: 18px;
+    }
+    .Contato .Mensagem textarea{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 255px;
+        width: 460px;
+        border-radius: 18px;
+    }
+    .Contato button{
+        margin-top: 5%;
+        height: 55px;
+        width: 160px;
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    .Informacoes{
+        display: flex;
+        justify-content: right;
+    }
+    /* FIM CONTATO */
+    
+    /* INICIO FOOTER */
+    .Copy{
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    .Copy h1{
+        font-size: 18px;
+        color: #8479ff;
+    }
+    /* FIM FOOTER */
+}
+
+@media(min-width: 768px) and (max-width: 1500px){
+    #Voltar{
+        height: 10px;
+    }
+    /* PARTE INICIAL */
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-attachment: fixed;
+        background-color: #212121;
+        background-image: linear-gradient(160deg, #110F20 20%, #322E7E);
+        font-family: 'DM Mono', monospace;
+        color: white;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #110F20;
+        top: 0;
+        padding: 0 2%;
+    }
+    .section a{
+        text-decoration: none;
+        color: white;
+    }
+    .section a:hover{
+        color: #8479ff;;
+    }
+    nav li{
+        display: inline-block;
+        position: relative;
+    }
+    nav li a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .tituloSite{
+        font-size: 22px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        box-shadow: 0 0 2px black;
+        display: none;
+    }
+    .dropdown-menu a{
+        display: block;
+        color: black;
+        color: white;
+    }
+    .dropdown:hover .dropdown-menu{
+        z-index: 99;
+        background-color: transparent;
+        border: transparent;
+        display: block;
+        background-color: #212121;
+       
+    }
+    body.dark {
+        background: white;
+        color: black;
+    }
+    
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+      
+    .label {
+        background-color: #322E7E;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 50px;
+    }
+    .label .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+      
+    .checkbox:checked + .label .ball {
+        transform: translateX(24px);
+    }
+    hr{
+        position: fixed;
+        width: 100%;
+        border-color: #3c2e93;
+    }
+    /* FIM PARTE INICIAL */
+    
+    /* INICIO   /SOBREM MIM*/
+    .Apresentacao{
+        top: 0;
+        display: flex;
+        height: 50vh;
+        padding: 0 10%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .Apresentacao img{
+        margin-top: 10%;
+    }
+    .Apresentacao div{
+        font-size: 30px;
+        padding-top: 10%;
+    }
+    .Apresentacao div span{
+        color: #8479ff;
+    }
+    .Apresentacao div p{
+        color: #8a8a8f;
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    .Apresentacao button{
+        background-color: #3c2e93;
+        color: white;
+        border-radius: 18px;
+        height: 40px;
+        width: 30%;
+        border: 0;
+    }
+    .Apresentacao button:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    .SobreMim{
+        margin-top: 15%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    .SobreMim h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .SobreMim p{
+        padding-top: 5%;
+        text-align: center;
+    }
+    .QuadInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-top: 10%;
+    }
+    .QuadCinzaInfo:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    .QuadCinzaInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #333333;
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+    }
+    .QuadCinzaInfo h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    /* INICIO / SOBRE MIM FIM */
+    
+    /* INICIO PROJETOS */
+    .mainprojeto{
+        margin-top: 15%;
+    }
+    .Projetos{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Projetos h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .QuadProjeto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinza{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+    }
+    .QuadCinza h1{
+        padding: 0 10%;
+        text-align: left;
+        font-size: 18px;
+    }
+    .QuadCinza p{
+        padding: 0 10%;
+        font-size: 14px;
+        color: #828282;
+    }
+    .QuadCinza img{
+        padding: 5% 7%;
+    }
+    .QuadCinza img:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    /* FIM PROJETOS */
+    
+    /* INICIO SERVICOS */
+    .mainservico{
+        margin-top: 50%;
+    }
+    .Servicos{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Servicos h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .QuadServico{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinzaServico{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+    }
+    .QuadCinzaServico img{
+        padding: 2% 2%;
+    }
+    .QuadCinzaServico h1{
+        padding: 25% 2%;
+        text-align: left;
+        font-size: 18px;
+        color: #828282;
+    }
+    /* FIM SERVICOS */
+    
+    /* INICIO HABILIDADES */
+    .mainHab{
+        margin-top: 50%;
+    }
+    .Habilidades{
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        padding-top: 5%;
+    }
+    .Habilidades h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+    }
+    .QuadHabilidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinzaHabilidades{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* FIM HABILIDADES */
+    
+    /* INICIO CONTATO */
+    .Contato{
+        margin-top: 200vh;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .Contato h1{
+        text-align: center;
+        font-size: 45px;
+        color: #8479ff;
+        margin-top: 50%;
+    }
+    .Contato .NomeESobre input{
+        margin-top: 30%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 222px;
+        border-radius: 18px;
+    }
+    .Contato .Telefone input{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 460px;
+        border-radius: 18px;
+    }
+    .Contato .Assunto input{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 460px;
+        border-radius: 18px;
+    }
+    .Contato .Mensagem textarea{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 255px;
+        width: 460px;
+        border-radius: 18px;
+    }
+    .Contato button{
+        margin-top: 5%;
+        height: 55px;
+        width: 160px;
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    .Informacoes{
+        display: flex;
+        justify-content: right;
+    }
+    /* FIM CONTATO */
+    
+    /* INICIO FOOTER */
+    .Copy{
+        display: flex;
+        justify-content: center;
+        padding-top: 55%;
+    }
+    .Copy h1{
+        font-size: 18px;
+        color: #8479ff;
+    }
+    /* FIM FOOTER */
+    }
+/*
+=======================================================================================================================================================================================
+=======================================================================================================================================================================================
+=======================================================================================================================================================================================
+*/
+
+
+/* @MEDIA INICIO */
+@media (max-width: 767px){
+    #Voltar{
+        height: 10px;
+    }
+    /* PARTE INICIAL */
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-attachment: fixed;
+        background-color: #212121;
+        background-image: linear-gradient(160deg, #110F20 20%, #322E7E);
+        font-family: 'DM Mono', monospace;
+        color: white;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #110F20;
+        top: 0;
+        padding: 0 2%;
+    }
+    .section a{
+        text-decoration: none;
+        color: white;
+    }
+    .section a:hover{
+        color: #8479ff;;
+    }
+    nav li{
+        display: inline-block;
+        position: relative;
+    }
+    nav li a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .tituloSite{
+        font-size: 22px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        box-shadow: 0 0 2px black;
+        display: none;
+    }
+    .dropdown-menu a{
+        display: block;
+        color: black;
+        color: white;
+    }
+    .dropdown:hover .dropdown-menu{
+        z-index: 99;
+        background-color: transparent;
+        border: transparent;
+        display: block;
+        background-color: #212121;
+       
+    }
+    body.dark {
+        background: white;
+        color: black;
+    }
+    
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+      
+    .label {
+        background-color: #322E7E;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 50px;
+    }
+    .label .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+      
+    .checkbox:checked + .label .ball {
+        transform: translateX(24px);
+    }
+    hr{
+        position: fixed;
+        width: 100%;
+        border-color: #3c2e93;
+    }
+    /* FIM PARTE INICIAL */
+    
+    /* INICIO   /SOBREM MIM*/
+    .euMain{
+        margin-top: 66px;
+    }
+    .Apresentacao{
+        top: 0;
+        display: flex;
+        padding: 0 10%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .Apresentacao img{
+        margin-top: 10%;
+    }
+    .Apresentacao div{
+        font-size: 16px;
+        padding-top: 10%;
+    }
+    .Apresentacao div span{
+        color: #8479ff;
+    }
+    .Apresentacao div p{
+        color: #8a8a8f;
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    .Apresentacao button{
+        background-color: #3c2e93;
+        color: white;
+        border-radius: 18px;
+        height: 40px;
+        width: 40%;
+        font-size: 14px;
+        border: 0;
+    }
+    .Apresentacao button:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    .SobreMim{
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .SobreMim h1{
+        text-align: center;
+        font-size: 35px;
+        color: #8479ff;
+        margin-top: 25%;
+    }
+    .SobreMim p{
+        padding-top: 5%;
+        font-size: 10px;
+        text-align: center;
+    }
+    .QuadInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-top: 10%;
+    }
+    .QuadCinzaInfo:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    .QuadCinzaInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #333333;
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+    }
+    .QuadCinzaInfo h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    /* INICIO / SOBRE MIM FIM */
+    
+    /* INICIO PROJETOS */
+    .mainprojeto{
+        padding-top: 30%;
+    }
+    .Projetos{
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    .Projetos h1{
+        text-align: center;
+        font-size: 35px;
+        color: #8479ff;
+    }
+    .QuadProjeto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinza{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+    }
+    .QuadCinza h1{
+        padding: 0 10%;
+        text-align: left;
+        font-size: 18px;
+    }
+    .QuadCinza p{
+        padding: 0 10%;
+        font-size: 14px;
+        color: #828282;
+    }
+    .QuadCinza img{
+        padding: 5% 7%;
+    }
+    .QuadCinza img:hover{
+        cursor: pointer;
+        transform: scale(1.20);
+        transition: 0.3s;
+    }
+    /* FIM PROJETOS */
+    
+    /* INICIO SERVICOS */
+    .mainservico{
+        padding-top: 50%;
+    }
+    .Servicos{
+        display: flex;
+        justify-content: center;
+    }
+    .Servicos h1{
+        text-align: center;
+        font-size: 35px;
+        color: #8479ff;
+    }
+    .QuadServico{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 220px;
+        padding-top: 10%;
+    }
+    .QuadCinzaServico{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+    }
+    .QuadCinzaServico img{
+        padding: 2% 2%;
+    }
+    .QuadCinzaServico h1{
+        padding: 25% 2%;
+        text-align: left;
+        font-size: 18px;
+        color: #828282;
+    }
+    /* FIM SERVICOS */
+    
+    /* INICIO HABILIDADES */
+    .mainHab{
+        padding-top: 50%;
+    }
+    .Habilidades{
+        display: flex;
+        justify-content: center;
+    }
+    .Habilidades h1{
+        text-align: center;
+        font-size: 35px;
+        color: #8479ff;
+    }
+    .Habilidades>div{
+        display: flex;
+        flex-direction: column;
+        gap: 50px; /* ESPAÇO ENTE AS DIVS*/
+    }
+    .QuadHabilidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;/* ESPAÇO ENTE OS CONTEUDOS*/
+    }
+    .QuadCinzaHabilidades{
+        background-color: #333333;
+        height: 250px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* FIM HABILIDADES */
+    
+    /* INICIO CONTATO */
+    .Contato{
+        display: flex;
+        justify-content: center;
+        padding-top: 55%;
+    }
+    .Contato h1{
+        text-align: center;
+        font-size: 35px;
+        color: #8479ff;
+    }
+    .Contato .NomeESobre input{
+        margin-top: 30%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 170px;
+        border-radius: 18px;
+    }
+    .Contato .Telefone input{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 360px;
+        border-radius: 18px;
+    }
+    .Contato .Assunto input{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 55px;
+        width: 360px;
+        border-radius: 18px;
+    }
+    .Contato .Mensagem textarea{
+        margin-top: 5%;
+        padding: 2% 2%;
+        height: 255px;
+        width: 360px;
+        border-radius: 18px;
+    }
+    .Contato button{
+        margin-top: 5%;
+        height: 55px;
+        width: 160px;
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    .Informacoes{
+        display: flex;
+        justify-content: right;
+    }
+    /* FIM CONTATO */
+    
+    /* INICIO FOOTER */
+    .Copy{
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    .Copy h1{
+        font-size: 18px;
+        color: #8479ff;
+    }
+    /* FIM FOOTER */
+}
